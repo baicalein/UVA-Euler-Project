@@ -10,7 +10,7 @@ size <- 10000
 data <- data.frame(value = rbinom(n, size, 0.5))
 # make histogram in ggplot2
 ggplot(data, aes(x = value)) + 
-  geom_histogram(binwidth = 1, fill = "blue", color = "black", alpha = 0.5) +
+  geom_histogram(binwidth = 1, fill = "red", color = "black", alpha = 0.5) +
   labs(title = "Histogram of Binomial Distribution:n=1,000,p=0.5,size=10,000", 
        x = "Number of Successes",
        y = "Probability Density")
